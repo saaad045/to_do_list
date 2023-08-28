@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="todo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Poppins:ital,wght@1,300;1,600&display=swap"
+        rel="stylesheet">
+    <title>ToDo List</title>
+</head>
+<body>
+    <header>
+        <h1>To Do List</h1>
+        <label for="start">Start date:</label>
+        <input type="date" id="start" name="trip-start" value="2023-08-28" min="2023-10-22" max="2023-10-31" />
+        <input type="text" id="myInput" placeholder="Things to be done Today..">
+        <span class="addBtn" id="add_Button">Add Task</span>
+    </header>
+    <ul id="myUL">
+        <li>
+            <div class="task">
+                <span class="enter tasks">Task name...</span>
+                <span class="countdown"></span>
+            </div>
+            <span class="close"></span>
+        </li>
+    </ul>
+    <script src="todo.js"></script>
+</body>
+</html>
